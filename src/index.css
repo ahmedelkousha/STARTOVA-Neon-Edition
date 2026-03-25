@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 228 30% 8%;
+    --foreground: 0 0% 100%;
+
+    --card: 228 25% 12%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 228 25% 12%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 220 90% 56%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 270 60% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 228 20% 18%;
+    --muted-foreground: 220 15% 65%;
+
+    --accent: 270 60% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 228 20% 20%;
+    --input: 228 20% 20%;
+    --ring: 220 90% 56%;
+
+    --radius: 0.5rem;
+
+    --neon-blue: 220 90% 56%;
+    --neon-purple: 270 60% 55%;
+    --glow-blue: 0 0% 0% / 0;
+
+    --sidebar-background: 228 30% 8%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 220 90% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 228 20% 18%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 228 20% 20%;
+    --sidebar-ring: 220 90% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    overflow: hidden;
+  }
+}
+
+.input {
+  @apply w-full px-4 py-2 rounded-lg bg-white/10 border border-white/10 text-foreground placeholder:text-white/40 outline-none focus:border-primary transition;
+}
+
+/* Swiper overrides */
+.swiper-pagination-bullet {
+  background: hsl(220 90% 56% / 0.5) !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+.swiper-pagination-bullet-active {
+  background: hsl(220 90% 56%) !important;
+  box-shadow: 0 0 10px hsl(220 90% 56% / 0.6);
+}
+
+/* Ken Burns */
+.bg-image {
+  transform: scale(1.05);
+  transition: transform 8s ease-out;
+}
+.swiper-slide-active .bg-image {
+  transform: scale(1.15) translateX(-2%);
+}
+
+/* Text animation */
+.slide-text {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.swiper-slide-active .slide-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Nested swiper */
+.services-swiper .swiper-button-next,
+.services-swiper .swiper-button-prev {
+  color: hsl(220 90% 56%) !important;
+  display: flex;
+}
+
+.swiper-pagination-bullets{
+  right: 2px !important;
+}
+.services-swiper .swiper-pagination-bullet {
+  background: hsl(220 90% 56% / 0.5) !important;
+}
+.services-swiper .swiper-pagination-bullet-active {
+  background: hsl(220 90% 56%) !important;
+}
+
+/* Custom scrollbar for service content */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: hsl(220 90% 56% / 0.3);
+  border-radius: 2px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: hsl(220 90% 56% / 0.5);
+}
