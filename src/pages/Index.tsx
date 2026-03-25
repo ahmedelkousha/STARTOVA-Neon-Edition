@@ -75,7 +75,7 @@ const Index = () => {
           {/* 1 - Hero */}
           <SwiperSlide>
             <SlideContent
-              image="/images/hero.png"
+              image="/images/hero.webp"
               gradientDirection="left"
               textAlign="left"
               objectAlign="center">
@@ -108,7 +108,7 @@ const Index = () => {
           {/* 2 - Vision */}
           <SwiperSlide>
             <SlideContent
-              image="/images/vision.png"
+              image="/images/vision.webp"
               gradientDirection="right"
               textAlign="right"
               objectAlign="left">
@@ -130,7 +130,7 @@ const Index = () => {
           {/* 3 - Mission */}
           <SwiperSlide>
             <SlideContent
-              image="/images/mission.png"
+              image="/images/mission.webp"
               gradientDirection="left"
               textAlign="left"
               objectAlign="right">
@@ -151,7 +151,7 @@ const Index = () => {
           {/* 4 - About */}
           <SwiperSlide>
             <SlideContent
-              image="/images/about.png"
+              image="/images/about.webp"
               gradientDirection="right"
               textAlign="right"
               objectAlign="left">
@@ -208,7 +208,7 @@ const Index = () => {
           {/* 6 - Ecosystem */}
           <SwiperSlide>
             <SlideContent
-              image="/images/ecosystem.png"
+              image="/images/ecosystem.webp"
               gradientDirection="right"
               textAlign="right"
               objectAlign="left">
@@ -256,7 +256,7 @@ const Index = () => {
           {/* 7 - Who We Work With */}
           <SwiperSlide>
             <SlideContent
-              image="/images/audience.png"
+              image="/images/audience.webp"
               gradientDirection="left"
               textAlign="left"
               objectAlign="right">
@@ -300,7 +300,7 @@ const Index = () => {
           {/* 8 - Why Choose Us */}
           <SwiperSlide>
             <SlideContent
-              image="/images/whychooseus.png"
+              image="/images/whychooseus.webp"
               gradientDirection="right"
               textAlign="right"
               objectAlign="left">
