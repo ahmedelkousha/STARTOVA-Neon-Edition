@@ -249,7 +249,7 @@ const ServicesSlider = () => {
         className="w-full h-full relative">
         {/* Background image */}
         <img
-          src="/images/services.png"
+          src="/images/services.webp"
           alt=""
           className="absolute inset-0 bg-image w-full h-full object-cover object-right blur-[0px] md:blur-none"
         />
